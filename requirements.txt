@@ -2,3 +2,5 @@ playwright
 ipykernel
 bs4
 pandas
+google-cloud-bigquery
+pyarrow

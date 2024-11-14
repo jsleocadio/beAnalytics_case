@@ -1,3 +1,4 @@
+*_venv/
 configs/*
 !configs/.gitkeep
 raw/*
