@@ -4,3 +4,5 @@ bs4
 pandas
 google-cloud-bigquery
 pyarrow
+db-dtypes
+google-api-python-client
