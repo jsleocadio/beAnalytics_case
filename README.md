@@ -68,3 +68,41 @@ python3 --version
 ```bash
 ./01_create_venv
 ```
+### 4. Configurar as credenciais:
+
+* Criar uma conta de serviço no Google Cloud com acesso ao BigQuery e ao Google Sheets.
+* Baixar o arquivo `credentials.json` e armazená-lo no diretório `credentials/`.
+
+## ⚙️ Como Executar
+
+**Selecionar o Kernel do Ambiente Virtual:**
+
+* No Jupyter, clique em **Kernel > Change Kernel**.
+* Selecione Python (.venv).
+
+## 🛠️ Tecnologias Utilizadas
+
+* [Playwright](https://playwright.dev/): Automação do navegador para extração de dados.
+* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/): Parsing de HTML para extração de dados estruturados.
+* [Google BigQuery](https://cloud.google.com/bigquery?hl=pt_br): Data warehouse para armazenamento e consulta de dados.
+* [Google Sheets API](https://developers.google.com/sheets/api/quickstart/python?hl=pt-br): Integração para disponibilizar os dados em planilhas.
+* Python Bibliotecas:
+    * `playwright`
+    * `bs4`
+    * `google-cloud-bigquery`
+    * `google-api-python-client`
+    * `pandas`
+
+## 📈 Objetivo
+Este projeto demonstra como construir um pipeline de **ELT**:
+
+* **Extração** de dados não estruturados da web.
+* **Carga** de dados para um banco de dados escalável (BigQuery).
+* **Transformação** e disponibilização dos dados para usuários finais em uma planilha.
+
+## 📝 Notas
+* **Credenciais**: As credenciais da conta de serviço não estão versionadas no repositório. Certifique-se de configurá-las corretamente antes de executar os scripts.
+* **Automação**: Este pipeline pode ser agendado usando ferramentas como **Apache Airflow** ou **Cron** para atualizações periódicas dos dados.
+
+## 🤝 Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para enviar sugestões ou melhorias. 🚀
